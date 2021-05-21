@@ -1,0 +1,257 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body {
+    margin-top: 0;
+    width: 100vw;
+}
+/* header style start  */
+ header {
+    width: 100%;
+    height: 75px;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-color: white;
+}
+ .flx-hdr{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+}
+.main-logo {
+    width: 60px;
+    height: 80px;
+    position: absolute;
+    top: 5px;
+    right: 50%;
+    margin-right: -27.5px;
+}
+.menu-logo {
+    width: 40px;
+}
+.flx-hdr > p {
+    display: none;
+}
+.flx-hdr > a {
+    width: 6.5rem;
+    padding: .5rem 1rem;
+    text-align: center;
+    background-color: rgb(103, 184, 103);
+    border-radius: .8rem;
+    color: white;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+} 
+.flx-hdr > a:nth-of-type(1){
+    display: none;
+}
+/* header style END here  */
+/* main style START here  */
+main {
+    width: 100%;
+    text-align: center;
+    background-image: url(https://www.torridiporsenna.it/wp-content/uploads/2018/03/hotstonepage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Varela Round', sans-serif;
+    position: relative;
+}
+main::after {
+    content: "";
+    opacity: .5;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    top: 0px;
+    left: 0px;
+}
+main > * {
+    z-index: 1;
+    position: relative;
+} 
+.flx-main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.logo-main2 {
+    width: 175px;
+    margin-top: 25px;
+}
+.txt--main {
+    font-size: 1.3rem;
+    margin-bottom: -15px;
+}
+.flx-main > h2 {
+    color: orange;
+    font-size: 2rem;
+    margin-bottom: -20px;
+}
+.play-icon {
+    width: 40px;
+    position: relative;
+    top: -45px;
+    left: -90px;
+    margin-bottom: 20px;
+}
+/* main style END here  */
+/* Form style START here  */
+.form-section {
+    width: 90vw;
+    margin: 0 auto;
+    border: 3px orange solid;
+    background-color: white;
+    border-radius: 1rem;
+    font-family: 'Varela Round', sans-serif;
+    position: relative;
+    top: -50px;
+}
+.form-dv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    position: relative;
+}
+.form-dv > form > select {
+    width: 90%;
+    height: 50px;
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+    border: none;
+    color: rgba(0, 0, 0, 0.698);
+}
+
+#btn {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    width: 200px;
+    height: 60px;
+    border:none;
+    background-color: orange;
+    border-radius: 1.5rem;
+    position: relative;
+    right: 50%;
+    margin-right: -100px;
+}
+/* form style END here  */
+
+@media screen and (min-width: 1024px) {
+    header {
+        width: 80%;
+        margin: 0 auto;
+        position: inherit;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-bottom: 1px white solid;
+    }
+    .main-logo {
+        position: inherit;
+    }
+    .menu-logo {
+        display: none;
+    }
+    .flx-hdr > p {
+        display: inherit;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .flx-hdr > a {
+        width: 10rem;
+        padding: .8rem 1rem;
+        text-align: center;
+        border-radius: .2rem;
+        color: white;
+    } 
+    .flx-hdr > a:nth-of-type(1){
+        display: block;
+        background-color: transparent;
+        border: 2px white solid
+    }
+    main {
+        background-image: inherit;
+    }
+    main:after{
+        display: none;
+    }
+    html {
+        background-image: url(https://www.torridiporsenna.it/wp-content/uploads/2018/03/hotstonepage.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        
+    }
+    html::after {
+        content: "";
+        opacity: .5;
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: rgb(29, 26, 18);
+        top: 0px;
+        left: 0px;
+    }
+    html > * {
+        z-index: 1;
+        position: relative;
+    } 
+    br {
+        display: none;
+    }
+
+    .txt--main {
+        max-width: 30rem;
+    }
+    .logo-main2 {
+        margin-top: 2.5rem;
+    }
+    .flx-main > h2 {
+        margin-top: 3rem;
+        margin-bottom: inherit
+    }
+    .flx-main > p:nth-of-type(2) {
+        font-size: 1.1rem;
+    }
+    .flx-main > p:nth-of-type(3) {
+        position: relative;
+        top: -100px;
+        left: -400px;
+    }
+    .play-icon {
+        top: -145px;
+        left: -490px;
+    }
+    .form-section {
+        width: 75%;
+        height: 100px;
+    }
+    .form-dv > form {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .form-dv > form > select {
+        width: 20%;
+    }
+    #btn {
+        font-size: 1rem;
+        width: 100px;
+        height: 40px;
+        border-radius: 1.5rem;
+        position: inherit;
+    }
+    #btn > img {
+        width: 15px;
+    }
+}
